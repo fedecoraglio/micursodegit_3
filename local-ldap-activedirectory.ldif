@@ -1,0 +1,95 @@
+dn: dc=jhacorp,dc=com
+objectclass: top
+objectclass: domain
+objectclass: extensibleObject
+dc: jhacorp
+
+dn: ou=Departments,dc=jhacorp,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: Departments
+
+dn: ou=JHA,dc=jhacorp,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: jha
+
+dn: uid=john,ou=JHA,dc=jhacorp,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: John Doe
+uid: john
+userPassword: {SHA}5en6G6MezRroT3XKqkdPOmY/BfQ=
+
+dn: uid=UserTest5,ou=JHA,dc=jhacorp,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Test 5
+uid: UserTest5
+userPassword: {SHA}5en6G6MezRroT3XKqkdPOmY/BfQ=
+
+dn: uid=UserTest4,ou=JHA,dc=jhacorp,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Test 4
+uid: UserTest4
+userPassword: {SHA}5en6G6MezRroT3XKqkdPOmY/BfQ=
+
+dn: uid=UserTest3,ou=JHA,dc=jhacorp,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Test 3
+uid: UserTest3
+userPassword: {SHA}5en6G6MezRroT3XKqkdPOmY/BfQ=
+
+dn: uid=UserTest0,ou=JHA,dc=jhacorp,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Test 0
+uid: UserTest0
+userPassword: {SHA}5en6G6MezRroT3XKqkdPOmY/BfQ=
+
+dn: uid=UserTest2,ou=JHA,dc=jhacorp,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Test 2
+uid: UserTest2
+userPassword: {SHA}5en6G6MezRroT3XKqkdPOmY/BfQ=
+
+dn: uid=UserTest1,ou=JHA,dc=jhacorp,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Test 1
+uid: UserTest1
+userPassword: {SHA}5en6G6MezRroT3XKqkdPOmY/BfQ=
+
+dn: cn=developers,ou=Departments,dc=jhacorp,dc=com
+objectclass: top
+objectclass: groupOfUniqueNames
+cn: developers
+ou: developer
+uniqueMember: uid=UserTest2,ou=JHA,dc=jhacorp,dc=com
+
+dn: cn=managers,ou=Departments,dc=jhacorp,dc=com
+objectclass: top
+objectclass: groupOfUniqueNames
+cn: managers
+ou: manager
+uniqueMember: uid=UserTest2,ou=JHA,dc=jhacorp,dc=com
+
+
+# password generator: http://aspirine.org/htpasswd_en.html
